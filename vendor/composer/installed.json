@@ -1,0 +1,61 @@
+{
+    "packages": [
+        {
+            "name": "freshwork/transbank",
+            "version": "1.2.1",
+            "version_normalized": "1.2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/freshworkstudio/transbank-web-services.git",
+                "reference": "690e15bd6cdeb6897f49ab12b18c3d48362e8d50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/freshworkstudio/transbank-web-services/zipball/690e15bd6cdeb6897f49ab12b18c3d48362e8d50",
+                "reference": "690e15bd6cdeb6897f49ab12b18c3d48362e8d50",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-openssl": "*",
+                "ext-soap": "*"
+            },
+            "time": "2019-12-17T13:16:26+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Freshwork\\Transbank\\Laravel\\WebpayServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Freshwork\\Transbank\\": "src/"
+                },
+                "classmap": [
+                    "src/wss"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gonzalo De Spirito",
+                    "email": "gonzalo@freshworkstudio.com"
+                }
+            ],
+            "description": "SDK para webservices de transbank (Webpay Plus, Webpay OneClick, Webpay PatPass)",
+            "support": {
+                "issues": "https://github.com/freshworkstudio/transbank-web-services/issues",
+                "source": "https://github.com/freshworkstudio/transbank-web-services/tree/1.2.1"
+            },
+            "install-path": "../freshwork/transbank"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
